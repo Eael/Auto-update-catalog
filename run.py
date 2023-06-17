@@ -4,7 +4,7 @@ import requests
 import re
 
 desc_path = "supplier-data/descriptions/"
-web_service_url = "http://34.132.228.57/fruits/"
+web_service_url = "http://34.27.225.176/fruits/"
 image_path = 'supplier-data/images/'
 
 text_files = sorted(os.listdir(desc_path))
@@ -42,10 +42,9 @@ for file in files:
     data = feedback
     counter += 1
 
-data['image_name'] = jpeg_images[image_counter]
-list_content.append(data)
-image_counter += 1
-
+    data['image_name'] = jpeg_images[image_counter]
+    list_content.append(data)
+    image_counter += 1
 
 # Send a POST request to the web service for each file
 for item in list_content:
