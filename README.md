@@ -10,7 +10,7 @@ Once the task is complete, the supplier should be notified with an email that in
 
 Finally, in parallel to the automation running, we want to check the health of the system and send an email if something goes wrong.
 
-#What you'll do
+# What you'll do
 Write a script that summarizes and processes sales data into different categories
 Generate a PDF using Python
 Automatically send a PDF by email
